@@ -10,7 +10,6 @@ export default class App extends Component {
             <div>
                 <Header/>
                 <Main/>
-                <Generate/>
                 <Footer/>
             </div>
         )
