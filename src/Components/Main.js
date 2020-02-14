@@ -18,7 +18,10 @@ export default class Main extends Component {
                 <div className="main">
                     <Post title="Naslov" desc="Opis o naslovu"/>
                 </div>
-                <Generate/>
+                <hr/>
+                <div className="generate">
+                    <Generate/>
+                </div>
             </div>
             
         )

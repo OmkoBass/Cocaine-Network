@@ -54,6 +54,23 @@
     padding: 1em;
     word-wrap: break-word;
 }
+.generate {
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #C04848, #480048);
+    color: white;
+}
+.generate button {
+    background: transparent;
+    color: white;
+    padding: 1em;
+    border: 1px solid white;
+    border-radius: 1em;
+    transition: 0.2s all ease-in-out;
+}
+.generate button:hover {
+    color: black;
+    background-color:white;
+}
 .footer {
     display: flex;
     justify-content: center;
