@@ -1,26 +1,26 @@
 import React, { Component } from 'react'
-import Post from './Post'
 import Generate from './Generate'
 
 export default class Main extends Component {
-    constructor(props) {
-        super(props)
-        this.Posts = props.Posts;
+    state = {
+        Posts: []
     }
 
-    state = {
-        Posts: this.Posts
+    getValues = (childData) => {
+        this.setState({
+            Posts: [...this.state.Posts, childData]
+        })
     }
 
     render() {
         return (
             <div>
                 <div className="main">
-                    <Post title="Naslov" desc="Opis o naslovu"/>
+                    {this.state.Posts}
                 </div>
                 <hr/>
                 <div className="generate">
-                    <Generate/>
+                    <Generate callBack={this.getValues}/>
                 </div>
             </div>
             

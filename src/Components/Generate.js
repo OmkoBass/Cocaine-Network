@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Post from './Post'
 
 export default class Generate extends Component {
     constructor(props) {
@@ -21,10 +22,16 @@ export default class Generate extends Component {
         })
     }
 
-    handleShare = () => {
-        console.log(`You submitted:\n
-        ${this.state.title}\n${this.state.desc}`)
-    }
+    sendData = () => {
+        if(this.state.title && this.state.desc) {
+            this.props.callBack(<Post title={this.state.title} desc={this.state.desc}/>);
+            this.setState({
+                title: '',
+                desc: ''
+            })
+        }
+    };
+
     render() {
         return (
             <div>
@@ -39,7 +46,7 @@ export default class Generate extends Component {
                     <textarea value={this.state.desc}
                     onChange={this.handleDescChange}></textarea>
 
-                    <button onClick={this.handleShare}>Generate</button>
+                    <button onClick={this.sendData}>Generate</button>
                 </div>
             </div>
         )

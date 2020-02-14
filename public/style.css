@@ -38,7 +38,7 @@
 }
 .container {
     padding: 1em;
-    background-color: lightgray;
+    background-color: #C04848;
     margin-bottom: 2em;
 }
 .post {
@@ -46,9 +46,7 @@
     flex-direction: column;
     padding: 1em;
     background-color: white;
-    -moz-box-shadow:    3px 3px 5px 6px darkgray;
-    -webkit-box-shadow: 3px 3px 5px 6px darkgray;
-    box-shadow:         3px 3px 5px 6px darkgray;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .post p {
     padding: 1em;
