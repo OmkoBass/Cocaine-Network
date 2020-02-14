@@ -7,26 +7,21 @@ export default class Generate extends Component {
             title: '',
             desc: ''
         }
-        
-        this.handleTitleChange = this.handleTitleChange.bind(this);
-        this.handleDescChange = this.handleDescChange.bind(this)
-
-        this.handleShare = this.handleShare.bind(this)
     }
 
-    handleTitleChange(event) {
+    handleTitleChange = (event) => {
         this.setState({
             title: event.target.value
         })
     }
 
-    handleDescChange(event) {
+    handleDescChange = (event) => {
         this.setState({
             desc: event.target.value
         })
     }
 
-    handleShare() {
+    handleShare = () => {
         console.log(`You submitted:\n
         ${this.state.title}\n${this.state.desc}`)
     }
