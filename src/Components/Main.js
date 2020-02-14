@@ -16,7 +16,7 @@ export default class Main extends Component {
         return (
             <div>
                 <div className="main">
-                    <Post title="Jebo sam kera" desc="Imao sam seksa sa svojim kerom"/>
+                    <Post title="Naslov" desc="Opis o naslovu"/>
                 </div>
                 <Generate/>
             </div>
