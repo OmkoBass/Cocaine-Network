@@ -46,7 +46,7 @@ export default class Generate extends Component {
                     <textarea value={this.state.desc}
                     onChange={this.handleDescChange}></textarea>
 
-                    <button onClick={this.sendData}>Generate</button>
+                    <button onClick={this.sendData}>Share</button>
                 </div>
             </div>
         )
